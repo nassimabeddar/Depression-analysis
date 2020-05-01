@@ -16,7 +16,13 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:nettoyage-de-donnees" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5202b3a8-3103-4fba-a646-14e1c8559c62" name="Default Changelist" comment="">
@@ -71,9 +77,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="nettoyage val abberrantes" />
     <option name="LAST_COMMIT_MESSAGE" value="nettoyage val abberrantes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1308" height="201" key="GridCell.Tab.0.bottom" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
+    <state width="1308" height="201" key="GridCell.Tab.0.center" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
+    <state width="1308" height="201" key="GridCell.Tab.0.left" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
+    <state width="1308" height="201" key="GridCell.Tab.0.right" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
   </component>
 </project>
