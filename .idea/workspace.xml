@@ -20,7 +20,6 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -28,7 +27,6 @@
     <list default="true" id="4fd35c44-b540-4b49-a500-f0ad0163e5f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Analyse-detection-depression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analyse-detection-depression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demographic_symptom.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Demographic_symptom.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588358448563</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="graph stats">
+      <created>1588440089617</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588440089617</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,19 +113,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -129,28 +122,33 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2 set net" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 set net" />
+    <MESSAGE value="graph stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="graph stats" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="239" key="GridCell.Tab.0.bottom" timestamp="1588439756998">
+    <state width="1345" height="239" key="GridCell.Tab.0.bottom" timestamp="1588441620009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
-    <state width="1345" height="239" key="GridCell.Tab.0.center" timestamp="1588439756998">
+    <state width="1345" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
+    <state width="1345" height="239" key="GridCell.Tab.0.center" timestamp="1588441620009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
-    <state width="1345" height="239" key="GridCell.Tab.0.left" timestamp="1588439756998">
+    <state width="1345" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
+    <state width="1345" height="239" key="GridCell.Tab.0.left" timestamp="1588441620009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
-    <state width="1345" height="239" key="GridCell.Tab.0.right" timestamp="1588439756998">
+    <state width="1345" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
+    <state width="1345" height="239" key="GridCell.Tab.0.right" timestamp="1588441620009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
-    <state x="174" y="14" key="SettingsEditor" timestamp="1588426941198">
+    <state width="1345" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
+    <state x="174" y="14" key="SettingsEditor" timestamp="1588441257752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="174" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588426941198" />
+    <state x="174" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588441257752" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1588440146847">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588440146847" />
   </component>
 </project>

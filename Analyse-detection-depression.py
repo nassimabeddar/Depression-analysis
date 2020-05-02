@@ -44,7 +44,7 @@ demo.rename(columns={'hs-CRP': 'hs_CRP'}, inplace=True)
 print(demo.info())
 
 
-shaps_filter = (demo.shaps_score >= 14) | (demo.shaps_score <= 56)
+shaps_filter = (demo.shaps_score >= 14) & (demo.shaps_score <= 56)
 psqi_filter = demo.psqi_score <= 21
 madrs_filter = demo.madrs_score <= 60
 hamd17_filter = demo.hamd_hamd17_score <= 52
@@ -57,21 +57,21 @@ poms_filter_fatigue = demo.poms_score_fatigue <= 28
 poms_filter_friendliness = demo.poms_score_friendliness<=28
 poms_filter_confusion = demo.poms_score_confusion <= 28
 poms_filter_vigour = demo.poms_score_vigour <= 32
-poms_filter_tmd = (demo.poms_score_tmd >= -32) | (demo.poms_score_tmd <= 68)
+poms_filter_tmd = (demo.poms_score_tmd >= -32) & (demo.poms_score_tmd <= 168)
 qids_sleep_filter = demo.qids_sleep_score <= 3
 qids_appetite_filter = demo.qids_appetite_score <= 3
 qids_psychomotor_filter = demo.qids_psychomotor_score <= 3
 qids_filter = demo.qids_score <= 27
-MADRS_Q1_filter = (demo.MADRS_Q1 >= 0) | (demo.MADRS_Q1 <= 6)
-MADRS_Q2_filter = (demo.MADRS_Q2 >= 0) | (demo.MADRS_Q2 <= 6)
-MADRS_Q3_filter = (demo.MADRS_Q3 >= 0) | (demo.MADRS_Q3 <= 6)
-MADRS_Q4_filter = (demo.MADRS_Q4 >= 0) | (demo.MADRS_Q4 <= 6)
-MADRS_Q5_filter = (demo.MADRS_Q5 >= 0) | (demo.MADRS_Q5 <= 6)
-MADRS_Q6_filter = (demo.MADRS_Q6 >= 0) | (demo.MADRS_Q6 <= 6)
-MADRS_Q7_filter = (demo.MADRS_Q7 >= 0) | (demo.MADRS_Q7 <= 6)
-MADRS_Q8_filter = (demo.MADRS_Q8 >= 0) | (demo.MADRS_Q8 <= 6)
-MADRS_Q9_filter = (demo.MADRS_Q9 >= 0) | (demo.MADRS_Q9 <= 6)
-MADRS_Q10_filter = (demo.MADRS_Q10 >= 0) | (demo.MADRS_Q10 <= 6)
+MADRS_Q1_filter = (demo.MADRS_Q1 >= 0) & (demo.MADRS_Q1 <= 6)
+MADRS_Q2_filter = (demo.MADRS_Q2 >= 0) & (demo.MADRS_Q2 <= 6)
+MADRS_Q3_filter = (demo.MADRS_Q3 >= 0) & (demo.MADRS_Q3 <= 6)
+MADRS_Q4_filter = (demo.MADRS_Q4 >= 0) & (demo.MADRS_Q4 <= 6)
+MADRS_Q5_filter = (demo.MADRS_Q5 >= 0) & (demo.MADRS_Q5 <= 6)
+MADRS_Q6_filter = (demo.MADRS_Q6 >= 0) & (demo.MADRS_Q6 <= 6)
+MADRS_Q7_filter = (demo.MADRS_Q7 >= 0) & (demo.MADRS_Q7 <= 6)
+MADRS_Q8_filter = (demo.MADRS_Q8 >= 0) & (demo.MADRS_Q8 <= 6)
+MADRS_Q9_filter = (demo.MADRS_Q9 >= 0) & (demo.MADRS_Q9 <= 6)
+MADRS_Q10_filter = (demo.MADRS_Q10 >= 0) & (demo.MADRS_Q10 <= 6)
 
 all_filter_abber = shaps_filter & psqi_filter & madrs_filter & hamd17_filter & hamd21_filter & hama_filter & poms_filter_tension & poms_filter_depression & poms_filter_anger & poms_filter_fatigue & poms_filter_friendliness & poms_filter_confusion & poms_filter_vigour & poms_filter_tmd & qids_sleep_filter & qids_appetite_filter & qids_psychomotor_filter & qids_filter & MADRS_Q1_filter & MADRS_Q2_filter & MADRS_Q3_filter & MADRS_Q4_filter & MADRS_Q5_filter & MADRS_Q6_filter & MADRS_Q7_filter & MADRS_Q8_filter & MADRS_Q9_filter & MADRS_Q10_filter
 
@@ -315,8 +315,9 @@ plt.title("hama_score")
 plt.show()
 
 #some statistics
-demo_net_spd.describe()
 
+print(demo_net_spd.describe(include='all'))
+print(demo_net_spd['poms_score_tmd'].describe())
 
 
 
