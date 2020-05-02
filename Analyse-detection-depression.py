@@ -1,7 +1,10 @@
 #package et chargement fichiers
 
 import pandas as pd
+import matplotlib.pyplot as plt
 import numpy as np
+
+
 
 demo = pd.read_csv("D:/git-projets/Depression-analysis/Demographic_symptom.csv", index_col = 0)
 
@@ -35,6 +38,9 @@ qids_total : 0 à 27
 #afficher le détail du df
 
 print(demo.head)
+print(demo.info())
+demo.rename(columns={'hs-CRP': 'hs_CRP'}, inplace=True)
+
 print(demo.info())
 
 
@@ -128,6 +134,190 @@ demo_net_pd = demo[all_filter_pd]
 demo_net_spd = demo_net_spd.drop(["PrimaryDiagnosis"], axis=1)
 demo_net_spd.info()
 demo_net_pd.info()
+
+"""
+ANALYSE DE DONNEES
+
+STAT SUR SANS PRIMARY DIAGNOSIS
+"""
+
+#create crosstab sex diag
+t = pd.crosstab(demo_net_spd.Diag, "freq")
+s = pd.crosstab(demo_net_spd.sex, "freq")
+print(t)
+print(s)
+
+# Create bar diag of Diag and sex
+s.plot.bar()
+plt.show()
+
+plt.boxplot(demo_net_spd.age)
+plt.title('Age des sujets')
+plt.show()
+
+t.plot.bar()
+plt.show()
+
+plt.hist(demo_net_spd.hs_CRP, bins = 6)
+plt.title("hs_CRP")
+plt.show()
+plt.hist(demo_net_spd.shaps_score, bins = 6)
+plt.title("shaps_score")
+plt.show()
+plt.hist(demo_net_spd.psqi_score, bins=6)
+plt.title('PSQI score')
+plt.show()
+
+fig1 = plt.figure()
+ax11 = fig1.add_subplot(2,4,1)
+ax21 = fig1.add_subplot(2,4,2)
+ax31 = fig1.add_subplot(2,4,3)
+ax41 = fig1.add_subplot(2,4,4)
+ax51 = fig1.add_subplot(2,4,5)
+ax61 = fig1.add_subplot(2,4,6)
+ax71 = fig1.add_subplot(2,4,7)
+ax11.title.set_text('CTQ Score deni, minimisation')
+ax21.title.set_text('CTQ Abus emotionnels')
+ax31.title.set_text('CTQ Negligence emotionnelle')
+ax41.title.set_text('CTQ Abus physiques')
+ax51.title.set_text('CTQ Negligence physique')
+ax61.title.set_text('CTQ Abus sexuels')
+ax71.title.set_text('CTQ score global')
+ax11.hist(demo_net_spd.ctq_denial_score,bins = 6)
+ax21.hist(demo_net_spd.ctq_emoabuse_score,bins = 6)
+ax31.hist(demo_net_spd.ctq_emoneglect_score,bins = 6)
+ax41.hist(demo_net_spd.ctq_physabuse_score,bins = 6)
+ax51.hist(demo_net_spd.ctq_physneglect_score,bins = 6)
+ax61.hist(demo_net_spd.ctq_sexabuse_score,bins = 6)
+ax71.hist(demo_net_spd.ctq_score,bins = 6)
+plt.show()
+
+fig3 = plt.figure()
+ax12 = fig3.add_subplot(2,4,1)
+ax22 = fig3.add_subplot(2,4,2)
+ax32 = fig3.add_subplot(2,4,3)
+ax42 = fig3.add_subplot(2,4,4)
+ax52 = fig3.add_subplot(2,4,5)
+ax62 = fig3.add_subplot(2,4,6)
+ax72 = fig3.add_subplot(2,4,7)
+ax82 = fig3.add_subplot(2,4,8)
+ax12.title.set_text('POMS Score Anxiete')
+ax22.title.set_text('POMS Score Depression')
+ax32.title.set_text('POMS Score Agressivite')
+ax42.title.set_text('POMS Score Fatigue')
+ax52.title.set_text('POMS Score Relations interpersonnelles')
+ax62.title.set_text('POMS Score Confusion')
+ax72.title.set_text('POMS Score Vigueur')
+ax82.title.set_text('POMS Score global')
+ax12.hist(demo_net_spd.poms_score_tension,bins = 6)
+ax22.hist(demo_net_spd.poms_score_depression,bins = 6)
+ax32.hist(demo_net_spd.poms_score_anger,bins = 6)
+ax42.hist(demo_net_spd.poms_score_fatigue,bins = 6)
+ax52.hist(demo_net_spd.poms_score_friendliness,bins = 6)
+ax62.hist(demo_net_spd.poms_score_confusion,bins = 6)
+ax72.hist(demo_net_spd.poms_score_vigour,bins = 6)
+ax82.hist(demo_net_spd.poms_score_tmd,bins = 6)
+plt.show()
+
+fig2 = plt.figure()
+ax10 = fig2.add_subplot(2,2,1)
+ax20 = fig2.add_subplot(2,2,2)
+ax30 = fig2.add_subplot(2,2,3)
+ax40 = fig2.add_subplot(2,2,4)
+ax10.title.set_text('QIDS : Score troubles psychomoteurs')
+ax20.title.set_text('QIDS : Score troubles du sommeil')
+ax30.title.set_text("QIDS : Score troubles de l'appétit")
+ax40.title.set_text('QIDS score global')
+ax10.hist(demo_net_spd.qids_psychomotor_score,bins = 6)
+ax20.hist(demo_net_spd.qids_sleep_score,bins = 6)
+ax30.hist(demo_net_spd.qids_appetite_score,bins = 6)
+ax40.hist(demo_net_spd.qids_score,bins = 6)
+plt.show()
+
+fig = plt.figure()
+ax1 = fig.add_subplot(4,3,1)
+ax2 = fig.add_subplot(4,3,2)
+ax3 = fig.add_subplot(4,3,3)
+ax4 = fig.add_subplot(4,3,4)
+ax5 = fig.add_subplot(4,3,5)
+ax6 = fig.add_subplot(4,3,6)
+ax7 = fig.add_subplot(4,3,7)
+ax8 = fig.add_subplot(4,3,8)
+ax9 = fig.add_subplot(4,3,9)
+ax10 = fig.add_subplot(4,3,10)
+ax1.title.set_text('MADRS_Q1')
+ax2.title.set_text('MADRS_Q2')
+ax3.title.set_text('MADRS_Q3')
+ax4.title.set_text('MADRS_Q4')
+ax5.title.set_text('MADRS_Q5')
+ax6.title.set_text('MADRS_Q6')
+ax7.title.set_text('MADRS_Q7')
+ax8.title.set_text('MADRS_Q8')
+ax9.title.set_text('MADRS_Q9')
+ax10.title.set_text('MADRS_Q10')
+ax1.hist(demo_net_spd.MADRS_Q1,bins = 6)
+ax2.hist(demo_net_spd.MADRS_Q2,bins = 6)
+ax3.hist(demo_net_spd.MADRS_Q3,bins = 6)
+ax4.hist(demo_net_spd.MADRS_Q4,bins = 6)
+ax5.hist(demo_net_spd.MADRS_Q5,bins = 6)
+ax6.hist(demo_net_spd.MADRS_Q6,bins = 6)
+ax7.hist(demo_net_spd.MADRS_Q7,bins = 6)
+ax8.hist(demo_net_spd.MADRS_Q8,bins = 6)
+ax9.hist(demo_net_spd.MADRS_Q9,bins = 6)
+ax10.hist(demo_net_spd.MADRS_Q10,bins = 6)
+ax11 = fig.add_subplot(4,3,11)
+ax11.title.set_text('MADRS Global Score')
+ax11.hist(demo_net_spd.madrs_score, bins=6)
+fig.subplots_adjust(left=0.12, bottom=0.11, right=0.90, top=0.92, wspace=0.2, hspace=0.5)
+plt.show()
+
+
+fag = plt.figure()
+az1 = fag.add_subplot(2,4,1)
+az2 = fag.add_subplot(2,4,2)
+az3 = fag.add_subplot(2,4,3)
+az4 = fag.add_subplot(2,4,4)
+az5 = fag.add_subplot(2,4,5)
+az6 = fag.add_subplot(2,4,6)
+az7 = fag.add_subplot(2,4,7)
+az8 = fag.add_subplot(2,4,8)
+az1.title.set_text('tci_coop_score')
+az2.title.set_text('tci_harmavoid_score')
+az3.title.set_text('tci_noveltyseek_score')
+az4.title.set_text('tci_persistence_score')
+az5.title.set_text('tci_rewarddep_score')
+az6.title.set_text('tci_selfdirect_score')
+az7.title.set_text('tci_selftranscend_score')
+az8.title.set_text('tci_impulsivity_score')
+az1.hist(demo_net_spd.tci_coop_score,bins = 6)
+az2.hist(demo_net_spd.tci_harmavoid_score,bins = 6)
+az3.hist(demo_net_spd.tci_noveltyseek_score,bins = 6)
+az4.hist(demo_net_spd.tci_persistence_score,bins = 6)
+az5.hist(demo_net_spd.tci_rewarddep_score,bins = 6)
+az6.hist(demo_net_spd.tci_selfdirect_score,bins = 6)
+az7.hist(demo_net_spd.tci_selftranscend_score,bins = 6)
+az8.hist(demo_net_spd.tci_impulsivity_score,bins = 6)
+plt.show()
+
+
+fog = plt.figure()
+az11 = fog.add_subplot(2,4,1)
+az12 = fog.add_subplot(2,4,2)
+az11.title.set_text('hamd_hamd17_score')
+az12.title.set_text('hamd_hamd21_score')
+az11.hist(demo_net_spd.hamd_hamd17_score,bins = 6)
+az12.hist(demo_net_spd.hamd_hamd21_score,bins = 6)
+
+plt.show()
+
+plt.hist(demo_net_spd.hama_score,bins = 6)
+plt.title("hama_score")
+plt.show()
+
+#some statistics
+demo_net_spd.describe()
+
+
 
 
 

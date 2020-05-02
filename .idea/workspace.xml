@@ -25,7 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fd35c44-b540-4b49-a500-f0ad0163e5f4" name="Default Changelist" comment="" />
+    <list default="true" id="4fd35c44-b540-4b49-a500-f0ad0163e5f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Analyse-detection-depression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analyse-detection-depression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demographic_symptom.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Demographic_symptom.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +53,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Analyse-detection-depression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Depression-analysis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Analyse-detection-depression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Analyse-detection-depression" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,25 +132,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="2 set net" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1308" height="240" key="GridCell.Tab.0.bottom" timestamp="1588358408589">
+    <state width="1345" height="239" key="GridCell.Tab.0.bottom" timestamp="1588439756998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="240" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588358408589" />
-    <state width="1308" height="240" key="GridCell.Tab.0.center" timestamp="1588358408588">
+    <state width="1345" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
+    <state width="1345" height="239" key="GridCell.Tab.0.center" timestamp="1588439756998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="240" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588358408588" />
-    <state width="1308" height="240" key="GridCell.Tab.0.left" timestamp="1588358408588">
+    <state width="1345" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
+    <state width="1345" height="239" key="GridCell.Tab.0.left" timestamp="1588439756998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="240" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588358408588" />
-    <state width="1308" height="240" key="GridCell.Tab.0.right" timestamp="1588358408588">
+    <state width="1345" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
+    <state width="1345" height="239" key="GridCell.Tab.0.right" timestamp="1588439756998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1308" height="240" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588358408588" />
-    <state x="174" y="14" key="SettingsEditor" timestamp="1588358158505">
+    <state width="1345" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588439756998" />
+    <state x="174" y="14" key="SettingsEditor" timestamp="1588426941198">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="174" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588358158505" />
+    <state x="174" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588426941198" />
   </component>
 </project>
