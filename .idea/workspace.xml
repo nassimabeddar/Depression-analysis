@@ -20,13 +20,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:analyse-donnees" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fd35c44-b540-4b49-a500-f0ad0163e5f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Analyse-detection-depression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analyse-detection-depression.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../script.ipynb" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Analyse-detection-depression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -105,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588440089617</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="quelques stats des">
+      <created>1588441968107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588441968107</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,7 +122,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="analyse-donnees" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -123,32 +144,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2 set net" />
     <MESSAGE value="graph stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="graph stats" />
+    <MESSAGE value="quelques stats des" />
+    <option name="LAST_COMMIT_MESSAGE" value="quelques stats des" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1345" height="239" key="GridCell.Tab.0.bottom" timestamp="1588441620009">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1588513538668">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
-    <state width="1345" height="239" key="GridCell.Tab.0.center" timestamp="1588441620009">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588513538668" />
+    <state width="1345" height="239" key="GridCell.Tab.0.bottom" timestamp="1588442001208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
-    <state width="1345" height="239" key="GridCell.Tab.0.left" timestamp="1588441620009">
+    <state width="1345" height="239" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588442001208" />
+    <state width="1345" height="239" key="GridCell.Tab.0.center" timestamp="1588442001208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
-    <state width="1345" height="239" key="GridCell.Tab.0.right" timestamp="1588441620009">
+    <state width="1345" height="239" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588442001208" />
+    <state width="1345" height="239" key="GridCell.Tab.0.left" timestamp="1588442001207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588441620009" />
-    <state x="174" y="14" key="SettingsEditor" timestamp="1588441257752">
+    <state width="1345" height="239" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588442001207" />
+    <state width="1345" height="239" key="GridCell.Tab.0.right" timestamp="1588442001208">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="174" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588441257752" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1588440146847">
+    <state width="1345" height="239" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588442001208" />
+    <state x="174" y="14" key="SettingsEditor" timestamp="1588514013484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588440146847" />
+    <state x="174" y="14" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588514013484" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1588441981709">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1588441981709" />
   </component>
 </project>
