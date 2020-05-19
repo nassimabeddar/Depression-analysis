@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:nettoyage-de-donnees" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5202b3a8-3103-4fba-a646-14e1c8559c62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Analyse-detection-depression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Analyse-detection-depression.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bE0fX7W5clqDvX6xOojf0goUil" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5202b3a8-3103-4fba-a646-14e1c8559c62" name="Default Changelist" comment="" />
+      <created>1588182052606</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588182052606</updated>
+    </task>
+    <task id="LOCAL-00001" summary="nettoyage val abberrantes">
+      <created>1588184401036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588184401036</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="nettoyage val abberrantes" />
+    <option name="LAST_COMMIT_MESSAGE" value="nettoyage val abberrantes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1308" height="201" key="GridCell.Tab.0.bottom" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
+    <state width="1308" height="201" key="GridCell.Tab.0.center" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
+    <state width="1308" height="201" key="GridCell.Tab.0.left" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
+    <state width="1308" height="201" key="GridCell.Tab.0.right" timestamp="1588259188826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="201" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588259188826" />
+  </component>
+</project>
